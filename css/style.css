@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+*{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+html,body{margin: 0;padding: 0;}
+body{overflow-y: hidden;}
+h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
+header,footer,main,aside,section,article{display: block;}
+ul,ol{margin: 0;padding: 0;list-style: none;}
+a{text-decoration: none;}
+
+
+
+
+main{
+    width: 100%; 
+    height: 100%; 
+    text-align: center;
+}
+main .cont_box{
+    width: 800px;
+    height: 1000px; 
+    margin: 0 auto; 
+    margin-top: 100px; 
+    padding: 20px;
+}
+main .cont_box .img_part{padding-bottom: 50px;}
+main .cont_box .img_part a{display: block;}
+main .cont_box .img_part a img{}
+main .cont_box .txt_part{}
+main .cont_box .txt_part h1{font-weight: 400;}
+main .cont_box .txt_part h1 span{font-weight: 700;}
+main .cont_box .txt_part p{
+    font-size: 11px; 
+    padding: 20px 0; 
+    color: #888; 
+    font-weight: 500;
+}
+main .cont_box .deadline{
+    border: 1px solid #aaa; 
+    padding: 20px;
+}
+main .cont_box .deadline p:nth-child(1){
+    font-size: 16px; 
+    font-weight: 400; 
+    color: #444;
+}
+main .cont_box .deadline p:nth-child(3){
+    font-size: 12px;
+    font-weight: 700;
+}
+main .cont_box .deadline p:nth-child(3) span{
+    padding-left: 20px; 
+    color: #888; 
+    font-weight: 400;
+}
+main .cont_box .deadline .flex_box{
+    text-align: center;
+    display: flex; 
+    align-content: center; 
+    justify-content: center; 
+    padding: 10px 0;
+}
+main .cont_box .deadline .flex_box .mark{
+    font-size: 50px; 
+    width: 20px; 
+    color: rgb(19, 153, 120);
+}
+main .cont_box .deadline .flex_box .box{
+    display: table;
+    width: 150px; 
+    height: 80px; 
+    background-image: linear-gradient(-45deg, transparent 10px, #ddd 0);
+    border-radius: 0px 20px 0 20px;
+    background:#ddd;
+    position: relative;
+}
+main .cont_box .deadline .flex_box .box::before{
+    content: ""; clear: both; display: block;
+    background: #aaaaff; 
+    position: absolute; bottom: 0;right: 0;
+    border-top: 5px solid #ddd;
+    border-right: 5px solid #fff;
+    border-left: 5px solid #ddd;
+    border-bottom: 5px solid #fff;        
+}
+main .cont_box .deadline .flex_box .box::after{   
+    content: ""; clear: both; display: block;  
+    background: #aaaaff; 
+    position: absolute; top: 0;left: 0;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #ddd;
+    border-left: 5px solid #fff;
+    border-bottom: 5px solid #ddd;
+}
+main .cont_box .deadline .flex_box .box p{
+    display: table-cell; 
+    color: rgb(19, 153, 120); 
+    font-weight: bold; 
+    font-size: 50px; 
+    vertical-align: middle;
+}
+
+main .cont_box h3{
+    padding: 20px 0 5px 0; 
+    font-weight: 400; 
+    color: #444;
+}
+main .cont_box .check_cont{border: 1px solid #aaa;}
+main .cont_box .check_cont p{
+    text-align: left;
+    padding: 20px; 
+    font-size: 12px;
+    color: #aaa; 
+    font-weight: 500;
+}
+
+@media (max-width:1030px){};
+
+
+
+
