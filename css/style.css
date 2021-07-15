@@ -38,6 +38,8 @@ main .cont_box .txt_part p{
 main .cont_box .deadline{
     border: 1px solid #aaa; 
     padding: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 main .cont_box .deadline p:nth-child(1){
     font-size: 16px; 
