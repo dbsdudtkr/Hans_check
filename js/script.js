@@ -43,4 +43,39 @@ $(document).ready(function(){
         }
     }, 1000);
 
+    // ex
+    // var countDown = document.getElementById('countdown');
+    // var startBtn = document.getElementById('start');
+    // // Link the start of the timer with a button click
+    // startBtn.addEventListener("click", function () {
+    //     upgradeTime = Math.floor(Date.now()/1000) + 50;  // set count down to 50 secs from now
+    //     localStorage.setItem('upgradeTime', upgradeTime); // ...and save it.
+    //     timer(); // Call timer function immediately
+    // });
+    // var upgradeTime = +localStorage.getItem('upgradeTime');
+    // if (upgradeTime) timer(); // continue the current count down
+    // function timer() {
+    //     startBtn.style.display = "none"; // hide start-button
+    //     // Calculate the actual number of seconds remaining from now:
+    //     var seconds     = upgradeTime - Math.floor(Date.now()/1000);
+    //     var days        = Math.floor(seconds/24/60/60);
+    //     var hoursLeft   = seconds - days*86400;
+    //     var hours       = Math.floor(hoursLeft/3600);
+    //     var minutesLeft = hoursLeft - hours*3600;
+    //     var minutes     = Math.floor(minutesLeft/60);
+    //     var remainingSeconds = seconds % 60;
+    //     function pad(n) {
+    //         return (n < 10 ? "0" + n : n);
+    //     }
+    //     countDown.textContent = pad(days) + ":" + pad(hours) + ":" + pad(minutes) + ":" + pad(remainingSeconds);
+    //     if (seconds <= 0) { // Deal with negative as well...
+    //         localStorage.removeItem('upgradeTime'); // remove the storage
+    //         countDown.textContent = 'done'; // Don't assign alert() here
+    //         startBtn.style.display = ""; // show the start-button
+    //     } else { 
+    //         // with setTimeout you don't need to maintain the return value
+    //         setTimeout(timer, 1000); // don't pass a string; it's bad practice
+    //     }
+    // }
+
 });

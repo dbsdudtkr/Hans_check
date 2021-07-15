@@ -18,8 +18,7 @@ main{
     text-align: center;
 }
 main .cont_box{
-    width: 800px;
-    height: 1000px; 
+    width: 800px; 
     margin: 0 auto; 
     margin-top: 100px; 
     padding: 20px;
@@ -115,8 +114,8 @@ main .cont_box .check_cont p{
     font-weight: 500;
 }
 
-@media (max-width:1030px){};
-
-
+@media (max-width:800px){
+    main .cont_box{width: 100vw; height: 100vh;}
+};
 
 
