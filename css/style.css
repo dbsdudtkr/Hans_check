@@ -120,7 +120,7 @@ main .cont_box .check_cont p{
 @media (max-width:420px){
     main .cont_box .deadline .flex_box .box{
         display: table;
-        width: 100px; 
+        width: calc(100% / 3); 
         height: 50px; 
         background-image: linear-gradient(-45deg, transparent 10px, #ddd 0);
         border-radius: 0px 20px 0 20px;
