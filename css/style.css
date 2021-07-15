@@ -78,10 +78,10 @@ main .cont_box .deadline .flex_box .box::before{
     content: ""; clear: both; display: block;
     background: transparent; 
     position: absolute; bottom: 0;right: 0;
-    border-top: 5px solid #fff;
-    border-right: 5px solid transparent;
-    border-left: 5px solid #fff;
-    border-bottom: 5px solid transparent;        
+    border-top: 5px solid transparent;
+    border-right: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid #fff;        
 }
 main .cont_box .deadline .flex_box .box::after{   
     content: ""; clear: both; display: block;  
