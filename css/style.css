@@ -76,21 +76,21 @@ main .cont_box .deadline .flex_box .box{
 }
 main .cont_box .deadline .flex_box .box::before{
     content: ""; clear: both; display: block;
-    background: #aaaaff; 
+    background: transparent; 
     position: absolute; bottom: 0;right: 0;
     border-top: 5px solid #ddd;
-    border-right: 5px solid #fff;
+    border-right: 5px solid transparent;
     border-left: 5px solid #ddd;
-    border-bottom: 5px solid #fff;        
+    border-bottom: 5px solid transparent;        
 }
 main .cont_box .deadline .flex_box .box::after{   
     content: ""; clear: both; display: block;  
-    background: #aaaaff; 
+    background: transparent; 
     position: absolute; top: 0;left: 0;
     border-top: 5px solid #fff;
-    border-right: 5px solid #ddd;
+    border-right: 5px solid transparent;
     border-left: 5px solid #fff;
-    border-bottom: 5px solid #ddd;
+    border-bottom: 5px solid transparent;
 }
 main .cont_box .deadline .flex_box .box p{
     display: table-cell; 
@@ -116,6 +116,30 @@ main .cont_box .check_cont p{
 
 @media (max-width:800px){
     main .cont_box{width: 100vw; height: 100vh;}
-};
+}
+@media (max-width:420px){
+    main .cont_box .deadline .flex_box .box{
+        display: table;
+        width: 100px; 
+        height: 50px; 
+        background-image: linear-gradient(-45deg, transparent 10px, #ddd 0);
+        border-radius: 0px 20px 0 20px;
+        background:#ddd;
+        position: relative;
+    }
+    main .cont_box .deadline .flex_box .box p{
+        display: table-cell; 
+        color: rgb(19, 153, 120); 
+        font-weight: bold; 
+        font-size: 20px; 
+        vertical-align: middle;
+    }
+    main .cont_box .deadline .flex_box .mark{
+        font-size: 30px; 
+        height: 50px;
+        width: 20px; 
+        color: rgb(19, 153, 120);
+    }
+}
 
 
