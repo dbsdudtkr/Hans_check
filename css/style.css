@@ -62,7 +62,7 @@ main .cont_box .deadline .flex_box{
 }
 main .cont_box .deadline .flex_box .mark{
     font-size: 50px; 
-    width: 20px; 
+    padding: 0 10px;
     color: rgb(19, 153, 120);
 }
 main .cont_box .deadline .flex_box .box{
