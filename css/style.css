@@ -62,7 +62,6 @@ main .cont_box .deadline .flex_box{
 }
 main .cont_box .deadline .flex_box .mark{
     font-size: 50px; 
-    padding: 0 10px;
     color: rgb(19, 153, 120);
 }
 main .cont_box .deadline .flex_box .box{
@@ -136,8 +135,7 @@ main .cont_box .check_cont p{
     }
     main .cont_box .deadline .flex_box .mark{
         font-size: 30px; 
-        height: 50px;
-        width: 20px; 
+        height: 50px; 
         color: rgb(19, 153, 120);
     }
     main .cont_box .txt_part h1{font-size: 20px;}
