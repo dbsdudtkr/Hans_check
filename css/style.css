@@ -140,6 +140,7 @@ main .cont_box .check_cont p{
         width: 20px; 
         color: rgb(19, 153, 120);
     }
+    main .cont_box .txt_part h1{font-size: 20px;}
 }
 
 
