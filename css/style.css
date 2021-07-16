@@ -3,12 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 *{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
 html,body{margin: 0;padding: 0;}
-body{overflow-y: hidden;}
+body{overflow-y: auto;}
 h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 header,footer,main,aside,section,article{display: block;}
 ul,ol{margin: 0;padding: 0;list-style: none;}
 a{text-decoration: none;}
-
+.box {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
 
 
 
@@ -22,15 +28,16 @@ main .cont_box{
     margin: 0 auto; 
     margin-top: 100px; 
     padding: 20px;
+    font-size: 0;
 }
 main .cont_box .img_part{padding-bottom: 50px;}
 main .cont_box .img_part a{display: block;}
 main .cont_box .img_part a img{}
 main .cont_box .txt_part{}
-main .cont_box .txt_part h1{font-weight: 400;}
+main .cont_box .txt_part h1{font-weight: 400; font-size: 32px;}
 main .cont_box .txt_part h1 span{font-weight: 700;}
 main .cont_box .txt_part p{
-    font-size: 11px; 
+    font-size: 13px; 
     padding: 20px 0; 
     color: #888; 
     font-weight: 500;
@@ -61,6 +68,7 @@ main .cont_box .deadline .flex_box{
     align-content: center; 
     justify-content: center; 
     padding: 10px 0;
+    font-size: 0;
 }
 main .cont_box .deadline .flex_box .mark{
     font-size: 50px; 
@@ -105,6 +113,7 @@ main .cont_box h3{
     padding: 20px 0 5px 0; 
     font-weight: 400; 
     color: #444;
+    font-size: 19px;
 }
 main .cont_box .check_cont{border: 1px solid #aaa;}
 main .cont_box .check_cont p{
