@@ -8,13 +8,6 @@ h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 header,footer,main,aside,section,article{display: block;}
 ul,ol{margin: 0;padding: 0;list-style: none;}
 a{text-decoration: none;}
-.box {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-}
-.box::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-}
 
 
 
@@ -123,10 +116,11 @@ main .cont_box .check_cont p{
     color: #aaa; 
     font-weight: 500;
 }
-
+/* 브라우저 넓이 800px 이하일 때 */
 @media (max-width:800px){
     main .cont_box{width: 100vw; height: 100vh;}
 }
+/* 브라우저 넓이 420px 이하일 때 */
 @media (max-width:420px){
     main .cont_box .deadline .flex_box .box{
         display: table;
@@ -150,5 +144,18 @@ main .cont_box .check_cont p{
         color: rgb(19, 153, 120);
     }
     main .cont_box .txt_part h1{font-size: 20px;}
+}
+/* 브라우저 높이 1201px 이상일 때 */
+@media (min-height:1201px){
+    main .cont_box{margin-top: 300px;}
+}
+/*브라우저 모바일 세로 스크롤바 제거*/
+@media (min-height:549px) and (max-width: 768px){
+    body{overflow-y: hidden;}
+}
+
+/* 브라우저 높이 700px 이하 */
+@media (max-height:700px){
+    main .cont_box{margin-top: 0;}
 }
 

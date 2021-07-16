@@ -42,4 +42,5 @@ $(document).ready(function(){
             $("main .cont_box .deadline .flex_box .box:last-child() p").text("0" + second);
         }
     }, 1000);
+
 });
