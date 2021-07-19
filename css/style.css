@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-*{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
-html,body{margin: 0;padding: 0;  /*익스플로러, 엣지*/}
+*{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing:border-box; -o-box-sizing:border-box; font-family: 'Noto Sans KR', sans-serif;}
+html,body{margin: 0;padding: 0; -ms-overflow-style: none; /*익스플로러, 엣지*/}
 body{overflow-y: auto;}
-body * { touch-action: none; }
+body * {touch-action: none;}
 body::-webkit-scrollbar { display: none;/*크롬, 사파리, 오페라*/  }
 h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 header,footer,main,aside,section,article{display: block;}
