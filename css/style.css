@@ -4,6 +4,7 @@
 *{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
 html,body{margin: 0;padding: 0;}
 body{overflow-y: auto;}
+body * { touch-action: none; }
 h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 header,footer,main,aside,section,article{display: block;}
 ul,ol{margin: 0;padding: 0;list-style: none;}
