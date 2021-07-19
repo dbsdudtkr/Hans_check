@@ -2,10 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 *{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
-html,body{margin: 0;padding: 0; -ms-overflow-style: none;}
+html,body{margin: 0;padding: 0; -ms-overflow-style: none; /*익스플로러, 엣지*/}
 body{overflow-y: auto;}
 body * { touch-action: none; }
-body::-webkit-scrollbar { display: none;  }
+body::-webkit-scrollbar { display: none;/*크롬, 사파리, 오페라*/  }
 h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 header,footer,main,aside,section,article{display: block;}
 ul,ol{margin: 0;padding: 0;list-style: none;}
@@ -122,7 +122,7 @@ main .cont_box .check_cont p{
 }
 /* 브라우저 넓이 800px 이하일 때 */
 @media (max-width:800px){
-    main .cont_box{width: 100vw; height: 100vh;}
+    main .cont_box{width: 100%; height: 100%;}
     main .cont_box .deadline .flex_box .box{
         display: table;
         width: calc(100% / 3); 
