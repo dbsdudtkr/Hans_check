@@ -50,7 +50,7 @@ $(document).ready(function(){
     
     function scrollDisable(){
         if(height >= 549 && width <= 768){
-            $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+            $('body').addClass('scrollDisable').on('scroll touchmove', function(e){
                 e.preventDefault();
             });
         }        
