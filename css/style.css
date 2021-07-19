@@ -151,10 +151,10 @@ main .cont_box .check_cont p{
 }
 /*브라우저 모바일 세로 스크롤바 제거*/
 @media (min-height:549px){
-    body{overflow-y: hidden; height: 100vh;}
+    body{overflow-y: hidden;}
 }
 @media (max-width: 768px){
-    body{overflow-y: hidden; height: 100vh;}
+    body{overflow-y: hidden;}
 }
 
 /* 브라우저 높이 700px 이하 */
