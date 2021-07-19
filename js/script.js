@@ -48,14 +48,8 @@ $(document).ready(function(){
     console.log(width);
     const height = window.innerHeight;
     
-    function scrollDisable(){
-        if(height >= 549 && width <= 768){
-            $('body').addClass('scrollDisable').on('scroll touchmove', function(e){
-                e.preventDefault();
-            });
-        }        
-    }
-    scrollDisable();
+    // 스크롤 방지
+    $("body").on('touchmove', function(e){e.preventDefault()});
     
 
 
