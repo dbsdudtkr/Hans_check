@@ -42,4 +42,21 @@ $(document).ready(function(){
             $("main .cont_box .deadline .flex_box .box:last-child() p").text("0" + second);
         }
     }, 1000);
+
+    /* 모바일 스크롤기능 제거 */
+    const width = window.innerWidth;
+    console.log(width);
+    const height = window.innerHeight;
+    
+    function scrollDisable(){
+        if(height >= 549 && width <= 768){
+            $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+                e.preventDefault();
+            });
+        }        
+    }
+    scrollDisable();
+    
+
+
 });
