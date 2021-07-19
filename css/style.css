@@ -58,7 +58,7 @@ main .cont_box .deadline p:nth-child(3) span{
 main .cont_box .deadline .flex_box{
     text-align: center;
     display: flex; 
-    align-content: center; 
+    align-items: center; 
     justify-content: center; 
     padding: 10px 0;
     font-size: 0;
@@ -66,6 +66,8 @@ main .cont_box .deadline .flex_box{
 main .cont_box .deadline .flex_box .mark{
     font-size: 50px; 
     color: rgb(19, 153, 120);
+    height: 80px;
+
 }
 main .cont_box .deadline .flex_box .box{
     display: table;
