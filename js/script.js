@@ -43,27 +43,6 @@ $(document).ready(function(){
         }
     }, 1000);
 
-    /* 모바일 스크롤기능 제거 */
-    const width = window.innerWidth;
-    console.log(width);
-    const height = window.innerHeight;
-    
-    // 스크롤 방지
-    disableScroll = () => {
-        document.querySelector('body').addEventListener('touchmove', this.removeEvent, { passive: false });
-        document.querySelector('body').addEventListener('onclick', this.removeEvent, { passive: false });
-        document.querySelector('body').addEventListener('mousewheel', this.removeEvent, { passive: false });
-      }
-    
-      removeEvent = e => {
-        e.preventDefault();
-        e.stopPropagation();
-      }
-    
-      enableScroll = () => {
-        document.querySelector('body').removeEventListener('touchmove', this.removeEvent);
-        document.querySelector('body').removeEventListener('onclick', this.removeEvent);
-        document.querySelector('body').removeEventListener('mousewheel', this.removeEvent);
-      }
+
 
 });
